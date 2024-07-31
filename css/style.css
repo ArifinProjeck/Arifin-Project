@@ -1,0 +1,509 @@
+:root {
+  --primary: #fff;
+  --bg: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  background-color: var(--bg);
+  color: var(--primary);
+  cursor: url("./png"), auto;
+}
+
+.navbar {
+  color: var(--primary);
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--primary);
+  background-color: rgb(79, 76, 45);
+}
+
+.navbar .title h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-style: normal;
+  color: #fff;
+  margin-left: 20px;
+  margin-top: 2.5vh;
+}
+
+.navbar .title span {
+  color: white;
+}
+
+.navbar .navbar-extra a {
+  color: white;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 300;
+  font-style: normal;
+  margin: 0 2rem;
+  padding: 10px;
+  margin-top: 1vh;
+}
+
+.navbar .navbar-extra a:hover {
+  color: khaki;
+}
+
+.navbar .navbar-extra a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid khaki;
+  transform: scaleX(0);
+}
+
+.navbar .navbar-extra a:hover::after {
+  transform: scaleX(1);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-extra a:hover a::after {
+  transform: scaleX(0.5);
+}
+
+.hamburger-menu a {
+  color: #fff;
+  margin: 0.3rem;
+}
+
+.hamburger-menu a:hover {
+  color: khaki;
+}
+
+/* Home-Dis */
+
+.home-dis,
+.about-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15%;
+}
+
+.home-dis .home p {
+  color: var(--primary);
+  display: block;
+  font-size: 1rem;
+  font-weight: 300;
+  font-style: normal;
+  margin: 0.5rem;
+}
+
+.home-dis .home span {
+  font-size: 2.5rem;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.home-dis {
+  margin-left: -45%;
+}
+
+.home {
+  position: fixed;
+  margin-top: 8%;
+}
+
+.home-dis .typewrite h2 {
+  font-size: 0.5rem;
+}
+
+.home-img .img {
+  width: 145px;
+  height: 145px;
+  margin-left: 60%;
+  margin-top: -1%;
+  margin-right: 70px;
+  border-radius: 10px;
+  position: fixed;
+}
+
+.home-dis .home span {
+  color: khaki;
+  font-size: 1.6rem;
+  font-weight: 100;
+  font-style: normal;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.sidebar a {
+  color: #fff;
+  background-color: darkslateblue;
+  display: block;
+  margin: 1.2rem;
+  font-size: 0.8rem;
+  font-weight: 300;
+  margin-left: 10px;
+}
+
+/* about */
+
+.about-dis {
+  background-color: gray;
+  width: 1100px;
+  height: 250px;
+  margin: 90px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.about-me h2 {
+  color: var(--primary);
+  font-size: 1rem;
+  font-weight: 500;
+  font-style: normal;
+  margin: 10%;
+  margin-top: 2%;
+}
+
+.about-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25%;
+  margin-top: -80px;
+}
+
+.about-text p {
+  color: #000;
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 500;
+  font-style: normal;
+  margin: 0 1rem;
+}
+
+.skils-tit h2 {
+  margin: 20px;
+  font-size: 1rem;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.about-img .img {
+  width: 145px;
+  height: 145px;
+  margin: 0.5 1rem;
+  border-radius: 10%;
+  margin-top: 130%;
+  margin-left: 10%;
+}
+
+.about-text {
+  margin-top: 17%;
+  margin-left: 15px;
+}
+.logo {
+  display: flex;
+}
+
+.logo-img {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 1px solid white;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+.logo-img h6 {
+  margin-left: 10px;
+  font-size: 0.7rem;
+  font-weight: 200;
+  font-style: normal;
+  margin-top: 2%;
+}
+
+.logo-img img {
+  width: 30px;
+  height: 30px;
+}
+
+/* about hover */
+
+.logo-img:hover {
+  transform: scale(1.1);
+}
+
+/* portpolio */
+
+.portpolio {
+  background-color: darkgray;
+  width: 20.5%;
+  border-radius: 10px;
+}
+
+.portpolio img {
+  margin-top: 10%;
+  margin-left: 39px;
+  width: 180px;
+  height: 100px;
+}
+
+.portpolio h2 {
+  color: #000;
+  font-size: 1rem;
+  font-weight: 500;
+  font-style: normal;
+  margin: 1rem;
+}
+
+.portpolio p {
+  color: #000;
+  font-size: 0.6rem;
+  font-weight: 400;
+  font-style: normal;
+  margin: 1rem;
+}
+
+.portpolio .port-type h3 {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 20px;
+}
+
+.portpolio h3 {
+  color: #000;
+  font-size: 1rem;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.past-project p {
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+
+.past-project h2 {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.past-project {
+  margin-top: 2%;
+}
+
+.portpolio {
+  margin: 15vh;
+  transition: all 0.3s ease;
+}
+
+/* aice */
+
+.web-aice {
+  background-color: darkgray;
+  width: 20.6%;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.web-aice img {
+  margin-top: 10%;
+  margin-left: 39px;
+  width: 180px;
+  height: 100px;
+}
+
+.aice h2 {
+  color: #000;
+  font-size: 1rem;
+  font-weight: 500;
+  font-style: normal;
+  margin: 1rem;
+}
+
+.web-aice .aice p {
+  color: #000;
+  font-size: 0.6rem;
+  font-weight: 400;
+  font-style: normal;
+  margin: 1rem;
+}
+
+.web-aice .aice-type h3 {
+  color: #000;
+  font-size: 1rem;
+  font-weight: 300;
+  font-style: normal;
+  margin: 20px;
+  margin-left: 20px;
+}
+
+.aice p {
+  color: gray;
+  font-size: 0.6rem;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.web-aice {
+  margin-top: -27%;
+  margin-left: 30%;
+}
+/* Web Dinamis */
+
+.web-dinamis {
+  background-color: darkgray;
+  width: 20.6%;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.web-dinamis img {
+  margin-top: 10%;
+  margin-left: 39px;
+  width: 180px;
+  height: 100px;
+}
+
+.aice h2 {
+  color: #000;
+  font-size: 1rem;
+  font-weight: 500;
+  font-style: normal;
+  margin: 1rem;
+}
+
+.web-dinamis .aice p {
+  color: #000;
+  font-size: 0.6rem;
+  font-weight: 400;
+  font-style: normal;
+  margin: 1rem;
+}
+
+.aice-type h3 {
+  color: #000;
+  font-size: 1rem;
+  font-weight: 300;
+  font-style: normal;
+  margin: 20px;
+  margin-left: 20px;
+
+  font-weight: 100;
+  font-style: italic;
+}
+
+.web-dinamis {
+  margin-top: -22%;
+  margin-left: 53.5%;
+}
+
+/* hover img */
+
+.portpolio:hover {
+  transform: scale(1.1);
+}
+
+.web-aice:hover {
+  transform: scale(1.1);
+}
+
+.web-dinamis:hover {
+  transform: scale(1.1);
+}
+/* blog */
+
+.blog .blog-tit h2 {
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 40%;
+  margin-top: 2%;
+}
+
+.blog .nav-blog {
+  background-color: #fff;
+  width: 26%;
+  margin-left: 70%;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.blog .nav-blog h5 {
+  color: #000;
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.blog .nav-blog:hover {
+  transform: scale(1.1);
+}
+
+/* anlmasi ketikan */
+
+#typing {
+  width: 0ch;
+  color: white;
+  float: left;
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 2s steps(2) 1s infinite alternate;
+}
+
+#typing span {
+  color: #fb8c00;
+  #line {
+    float: left;
+    color: white;
+    font-weight: 400;
+    font-size: 1rem;
+    animation: crow 0.5s linear 0s infinite;
+  }
+  @keyframes typing {
+    from {
+      width: 0ch;
+    }
+    to {
+      width: 25ch;
+    }
+  }
+  @keyframes typing {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+#typed-text {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+/* mobile phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
